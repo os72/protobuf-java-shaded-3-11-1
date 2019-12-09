@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+	<groupId>org.sonatype.oss</groupId>
+	<artifactId>oss-parent</artifactId>
+	<version>9</version>
+  </parent>
 
-  <groupId>com.google.protobuf</groupId>
-  <artifactId>protobuf-parent</artifactId>
-  <version>3.11.1</version>
+  <groupId>com.github.os72</groupId>
+  <artifactId>protobuf-parent-shaded-3-11-1</artifactId>
+  <version>0.9-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Protocol Buffers [Parent]</name>
+  <name>Protocol Buffers [Parent] - shaded version 3.11.1</name>
   <inceptionYear>2008</inceptionYear>
-  <url>https://developers.google.com/protocol-buffers/</url>
+  <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
   <description>
     Protocol Buffers are a way of encoding structured data in an efficient yet
     extensible format.
@@ -24,6 +29,10 @@
       <organizationUrl>https://cloud.google.com</organizationUrl>
       <timezone>America/Los_Angeles</timezone>
     </developer>
+	<developer>
+	  <id>os72</id>
+	  <name>Oliver Suciu</name>
+	</developer>
   </developers>
 
   <properties>
@@ -48,26 +57,15 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/protocolbuffers/protobuf</url>
-    <connection>scm:git:https://github.com/protocolbuffers/protobuf.git</connection>
+    <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
+	<connection>scm:git:git@github.com:os72/protobuf-java-shaded-3-11-1.git</connection>
   </scm>
-
-  <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-bom</artifactId>
+        <groupId>com.github.os72</groupId>
+        <artifactId>protobuf-bom-shaded-3-11-1</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>

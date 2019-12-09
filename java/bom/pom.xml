@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.google.protobuf</groupId>
-  <artifactId>protobuf-bom</artifactId>
-  <version>3.11.1</version>
+  <groupId>com.github.os72</groupId>
+  <artifactId>protobuf-bom-shaded-3-11-1</artifactId>
+  <version>0.9-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Protocol Buffers [BOM]</name>
+  <name>Protocol Buffers [BOM] - shaded version 3.11.1</name>
   <description>A compatible set of open source libraries for working with protocol buffers.</description>
-  <url>https://developers.google.com/protocol-buffers/</url>
+  <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
 
   <organization>
     <name>Google LLC</name>
@@ -25,6 +25,10 @@
       <organizationUrl>https://cloud.google.com</organizationUrl>
       <timezone>America/Los_Angeles</timezone>
     </developer>
+	<developer>
+	  <id>os72</id>
+	  <name>Oliver Suciu</name>
+	</developer>
   </developers>
 
   <licenses>
@@ -35,8 +39,8 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/protocolbuffers/protobuf</url>
-    <connection>scm:git:https://github.com/protocolbuffers/protobuf.git</connection>
+    <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
+	<connection>scm:git:git@github.com:os72/protobuf-java-shaded-3-11-1.git</connection>
   </scm>
 
   <properties>
@@ -57,13 +61,13 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-java</artifactId>
+        <groupId>com.github.os72</groupId>
+        <artifactId>protobuf-java-shaded-3-11-1</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-java-util</artifactId>
+        <groupId>com.github.os72</groupId>
+        <artifactId>protobuf-java-util-shaded-3-11-1</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
