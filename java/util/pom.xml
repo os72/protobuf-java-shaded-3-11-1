@@ -88,8 +88,11 @@
                   <arg value="--java_out=${generated.testsources.dir}"/>
                   <arg value="--proto_path=${protobuf.source.dir}"/>
                   <arg value="--proto_path=src/test/proto"/>
-                  <arg value="src/test/proto/com/google/protobuf/util/json_test.proto"/>
+                  <arg value="src/test/proto/com/github/os72/protobuf_3_11_1/util/json_test.proto"/>
                 </exec>
+				<replace token="com.google.protobuf" value="com.github.os72.protobuf_3_11_1" dir="target/generated-test-sources">
+				  <include name="**/*.java" />
+				</replace>
               </target>
             </configuration>
             <goals>
