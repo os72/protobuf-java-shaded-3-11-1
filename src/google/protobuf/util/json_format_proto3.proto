@@ -40,7 +40,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/unittest.proto";
 
-option java_package = "com.google.protobuf.util";
+option java_package = "com.github.os72.protobuf_3_11_1.util";
 option java_outer_classname = "JsonFormatProto3";
 
 enum EnumType {
