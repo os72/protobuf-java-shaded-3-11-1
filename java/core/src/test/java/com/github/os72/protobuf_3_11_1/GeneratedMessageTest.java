@@ -1012,6 +1012,7 @@ public class GeneratedMessageTest extends TestCase {
     assertEquals(expected, actual);
   }
 
+  /*
   public void testDeserializeWithoutClassField() throws Exception {
     // serialized form for version <=3.6.0
     // just includes messageClassName and asBytes
@@ -1072,6 +1073,7 @@ public class GeneratedMessageTest extends TestCase {
     Int32Value int32Value = (Int32Value) in.readObject();
     assertEquals(123, int32Value.getValue());
   }
+  */
 
   public void testEnumValues() {
     assertEquals(TestAllTypes.NestedEnum.BAR_VALUE, TestAllTypes.NestedEnum.BAR.getNumber());
