@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.github.os72</groupId>
     <artifactId>protobuf-parent-shaded-3-11-1</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
   </parent>
 
   <artifactId>protobuf-java-util-shaded-3-11-1</artifactId>
